@@ -1,12 +1,12 @@
-remove later --> The very basic C# development with Microsoft .NET (currently version 7.0) via Docker Container!
-
 # About
 This repos is especially for those who are using Linux Distribution everyday but want to develop Microsoft frameworks such as .NET and C#.
 
 I highly recommend not to install .NET or Microsoft related dev tools directly onto your Linux host PC, so please use this Docker version's environment.
 
+Your created projects are kept alive via docker volume container, even if the container is removed from your host computer.
+
 ## Step by step lecture - how to fulfill the first "HelloWorld" project.
-1. Open your Linux Distribution's terminal, then
+1. Download the source code from this repository, then open the folder where `docker-compose.yml` exists via your Linux Distribution's terminal, then
     ```
     docker compose up -d
     ```
@@ -33,6 +33,13 @@ I highly recommend not to install .NET or Microsoft related dev tools directly o
     ```
     docker compose down
     ```
+
+## To resure Yesterday's .NET development
+1. Open the folder where `docker-compose.yml` exists via your Linux Distribution's terminal then, (previously created docker volume will be used again)
+    ```
+    docker compose up -d
+    ```
+2. Open VSCode normally, then connect to the Yesterday's project's folder directly (alternatively you can connect to the root of the container)
 
 ## About `create-move-prj.sh` file
 You can use this file both for "to create a new project" and "to move to other exsisting projects"
