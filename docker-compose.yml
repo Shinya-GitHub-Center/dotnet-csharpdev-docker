@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  dotnet:
+    build:
+      context: ./docker/dotnet
+      dockerfile: Dockerfile
+    volumes:
+      - type: volume
+        source: csprj-vsc
+        target: /root
+    tty: true
+    stdin_open: true
+volumes:
+  csprj-vsc:
