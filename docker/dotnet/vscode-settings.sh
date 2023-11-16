@@ -3,7 +3,7 @@
 # variables for vscode setting
 VSCDIR="$HOME/.vscode-server"
 VSCJSON="$HOME/.vscode-server/data/Machine/settings.json"
-VSCSET=''
+VSCSET='{\n\t"dotnet.automaticallyCreateSolutionInWorkspace": false\n}'
 
 # main commands
 if [ -d "$VSCDIR" ]; then
