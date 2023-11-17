@@ -26,6 +26,25 @@ Your created projects are kept alive via docker volume container, even if the co
     ```
 6. Now, you will see the "hellow world" letter on the console, you really made it!
 
+## How to debug your project
+
+1. Open `Program.cs` file via VSCode
+2. Press F5 or click "Run & Debug" icon located at upper right position of the editor window
+(If you asked for selecting debugger, select C#)
+ 
+I will attach some useful shortcuts for debugging on VSCode
+
+| Shortcut | Description |
+| --- | --- |
+| `F5` | Run debug, Resume |
+| `Ctrl+F5` | Run without debug |
+| `F9` | Set breakpoint, Remove point |
+| `F10` | Run step by step |
+| `Ctrl+F10` | Run by stopping at a cursol row |
+| `F11` | Step in |
+| `Shift+F11` | Step out |
+| `Shift+F5` | Stop debug |
+
 ## How to finish Today's .NET development
 1. Close VSCode normally
 

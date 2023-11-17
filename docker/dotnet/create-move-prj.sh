@@ -7,11 +7,8 @@ APPTYPE="console"
 # main commands
 
 if [ ! -e "$HOME"/csprj/"$PRJNAME" ]; then
-    cd "$HOME"/csprj
-    mkdir "$PRJNAME" && cd "$_"
-    dotnet new "$APPTYPE"
-    code -r .
+    dotnet new "$APPTYPE" -o "$HOME"/csprj/"$PRJNAME"
+    code -r "$HOME"/csprj/"$PRJNAME"
 else
-    cd "$HOME"/csprj/"$PRJNAME"
-    code -r .
+    code -r "$HOME"/csprj/"$PRJNAME"
 fi
